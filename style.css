@@ -1,0 +1,36 @@
+body {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    display: flex;
+}
+
+#sidebar {
+    flex: 0 0 16em;
+    overflow: auto;
+    padding: 1em;
+}
+
+#main {
+    flex: auto;
+    overflow: auto;
+    padding: 1em;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -0.5em; /* The gap css property is not widely supported but by
+                       setting the negative of the image margin we get a similar
+                       effect
+                     */
+}
+
+#images img {
+    margin: 0.5em;
+    height: 20vmin;
+}
